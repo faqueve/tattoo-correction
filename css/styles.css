@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Montserrat:wght@100;300;800;900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,900&display=swap");
+body {
+  font-family: "Monserrat", sans-serif;
+  overflow-x: hidden;
+  background-color: #413D3C;
+}
+
+header {
+  background-color: #0D0D0D;
+}
+
+/* ----------------------------------MENU------------------------------------- */
+#menu a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+button {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ----------------------------------SLIDER DE IMÁGENES------------------------------------- */
+.carousel-inner {
+  max-height: 39rem;
+}
+
+/* ----------------------------------FOOTER------------------------------------- */
+footer {
+  background-color: #0D0D0D;
+  min-height: 100px;
+}
+footer p {
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+}
+
+#iconos {
+  font-size: 26px;
+  padding: 0 8px;
+}
+
+/* ----------------------------------GALERIA------------------------------------- */
+.contenedor {
+  width: 100%;
+  margin: auto;
+  background-image: linear-gradient(rgba(16, 16,16, .8), rgba(16, 16,16, .8)), url(../img/fondo2.jpg);
+}
+
+img {
+  width: 100%;
+}
+.draws__column {
+  padding: 5px;
+}
+
+.draws .contenedor {
+  display: grid;
+}
+
+@media(min-width:576px) {
+  .draws .contenedor {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .draws .contenedor {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .draws .contenedor {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ----------------------------------MEDIAQUERIES PANTALLA SM------------------------------------- */
+@media screen and (max-widht: 768px) {
+  #intro {
+    width: 90% !important;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
